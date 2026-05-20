@@ -3,7 +3,7 @@ import math
 
 def area_triangulo(base: float, altura: float) -> float:
     """Calcula el área de un triángulo dado su base y altura."""
-    if base <= 0 or altura <= 0:
+    if base <= 0 or altura > 0:
         raise ValueError("La base y la altura deben ser mayores que cero.")
     return (base * altura) / 2
 
